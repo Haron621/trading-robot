@@ -1,0 +1,13 @@
+Read-only discovery task for the trading-robot Build specification.
+
+Repository root: C:\Users\ALEKSEI\Documents\Codex\2026-07-18\openbuild-build-full
+
+Objective: inspect only the repository/workspace and return a compact evidence map. Do not edit files, run write-capable commands, create credentials, contact exchanges, place orders, commit, push, or answer the user.
+
+Determine:
+1. Existing application, specs, instructions, tests, package/dependency manifests, and Git baseline.
+2. Whether any current implementation exists for the selected product: XAUUSD+ Bybit TradFi, local web panel, Telegram notifications, or trading logic.
+3. Available validation entry points and constraints.
+4. Risks/gaps that affect the specification but do not make product decisions.
+
+Return only: path:line, symbol/route or artifact, confirmed fact, why it matters, negative results, and confidence. Stop once the workspace is covered.
