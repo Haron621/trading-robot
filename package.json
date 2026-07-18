@@ -1,0 +1,14 @@
+{
+  "name": "xauusd-tradfi-simulator",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Fail-closed local analysis and paper-signal simulator for XAUUSD+.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "start": "node src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
