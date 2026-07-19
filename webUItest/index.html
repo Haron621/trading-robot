@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>XAUUSD+ | Trading Robot</title>
+    <link rel="stylesheet" href="/styles.css">
+  </head>
+  <body>
+    <main class="shell">
+      <header class="topbar">
+        <div>
+          <p class="eyebrow">LOCAL · PAPER MODE</p>
+          <h1>XAUUSD+ <span>Trading Robot</span></h1>
+        </div>
+        <div class="connection"><i></i><span>Локальный симулятор</span></div>
+      </header>
+
+      <section class="safety-note">
+        <strong>Защита включена.</strong> Веб-панель не подключается к бирже, не хранит ключи и не выставляет ордера.
+      </section>
+
+      <section class="hero-grid">
+        <article class="decision-card" id="decision-card">
+          <p class="label">Статус входа</p>
+          <h2 id="decision">Загрузка…</h2>
+          <p id="decision-detail">Проверяем защитные условия.</p>
+        </article>
+        <article class="metric-card">
+          <p class="label">Вероятность сценария</p>
+          <div class="probability"><span id="probability">—</span><small>%</small></div>
+          <div class="progress"><span id="progress"></span></div>
+        </article>
+        <article class="metric-card">
+          <p class="label">Режим рынка</p>
+          <h2 id="regime">—</h2>
+          <p id="updated" class="muted">—</p>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <article class="panel scenario">
+          <div class="panel-heading"><p class="label">Аналитическая карточка</p><span id="instrument">XAUUSD+</span></div>
+          <h2 id="direction">Нет подтверждённого сценария</h2>
+          <div class="detail-list">
+            <div><span>Происхождение движения</span><strong id="origin">—</strong></div>
+            <div><span>Условие отмены</span><strong id="invalidation">—</strong></div>
+          </div>
+        </article>
+        <article class="panel">
+          <p class="label">Факторы реакции</p>
+          <ul id="factors" class="factors"></ul>
+        </article>
+      </section>
+
+      <section class="panel journal-panel">
+        <div class="panel-heading"><div><p class="label">Журнал решений</p><h2>Последние проверки</h2></div><button id="refresh" type="button">Обновить</button></div>
+        <div class="table-wrap"><table><thead><tr><th>Время</th><th>Решение</th><th>Причина</th><th>Источник</th></tr></thead><tbody id="journal"><tr><td colspan="4">Загрузка…</td></tr></tbody></table></div>
+      </section>
+    </main>
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
